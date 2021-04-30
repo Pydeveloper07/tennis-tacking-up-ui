@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+}
+html, body, .main{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.custom-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    padding: 0.5rem 3em;
+    z-index: 10;
+    transition: background 300ms;
+}
+#navbar{
+    background: transparent;
+}
+
+.custom-nav .nav-item .nav-link{
+    color: white;
+    font-weight: 500;
+}
+
+.custom-nav .nav-item .nav-link:not(.custom-nav .nav-item.active .nav-link):hover{
+    color: rgb(253, 163, 128) !important;
+}
+
+.custom-nav .navbar-brand{
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.custom-nav .nav-item.active .nav-link{
+    color: rgb(255, 114, 58);
+    font-weight: 700;
+}
+
+section.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(/images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section.home .content-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.719);
+    width: 90%;
+}
+section.home .content-block .content{
+    font-size: 4.5em;
+    font-family: 'New Tegomin', serif;
+    line-height: 1.2;
+}
+section.home .content-block p.author {
+    text-align: right;
+    font-size: 4em;
+    color: rgb(0, 126, 0);
+    font-family: 'Orelega One', cursive;
+}
+section.home .content-block p.author::before {
+    content: "—";
+    margin-right: 5px;
+}
+section.about-us .content-block{
+    display: flex;
+}
+section.about-us .content-image{
+    width:50%;
+    background: url(/images/section-abput.jpg) no-repeat;
+    background-size: cover;
+}
+section.about-us .content{
+    padding: 1em 3em;
+    font-size: 1.3em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: black;
+    color:white;
+}
+section.about-us .content p{
+    line-height: 2;
+}
+section.news .content-block{
+    display: flex;
+}
+section.news .news-show{
+    width: 70%;
+}
+section.news .news-show .inner{
+    padding: 1em;
+}
+section.news .news-show .news-title{
+    color:blue;
+    text-transform: uppercase;
+}
+section.news .news-show .news-image img{
+    width: 100%;
+}
+section.news .news-footer{
+    font-style: italic;
+    font-weight: 400;
+    color: grey;
+}
+section.news .tag-block .tag{
+    color: blue;
+    margin-right: 0.5rem;
+}
+section.news .tag-block .tag:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+section.news .news-list {
+    background: rgb(235, 235, 235);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+section.news .news-list .inner {
+    display: flex;
+    flex-direction: column;
+}
+section.news .news-list .item-image{
+    width: 35%;
+    min-height: 100%;
+    background: url(/images/news3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.news .news-list .item-content{
+    width: 65%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+section.news .news-list .item-content .news-content{
+    font-size: 0.8em;
+}
+section.news .news-list .item{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+section.news .news-list .item .news-title{
+    color: blue;
+}
+section.news .news-list .item:hover .news-title{
+    text-decoration: underline;
+}
+section.tournaments .inner .tournament-list-block{
+    overflow-y: scroll;
+}
+section.tournaments .inner .tournament-list-block::-webkit-scrollbar{
+    display: none;
+}
+section.tournaments .header{
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Coda Caption', sans-serif;
+    color: green;
+}
+section.tournaments .tournament-list-block{
+    padding: 0.5em;
+    background: rgb(235, 235, 235);
+}
+section.tournaments .tournament-list-block{
+    display: flex;
+    flex-direction: column;
+}
+section.tournaments .list-item{
+    background: white;
+    margin-bottom: 0.5em;
+}
+section.tournaments .list-item .tournament{
+    display: flex;
+}
+section.tournaments .list-item .brand{
+    width: 20%;
+    min-height: 100%;
+    position: relative;
+}
+section.tournaments .list-item .brand img{
+    width: 100%;
+    height: 100%;
+}
+section.tournaments .list-item .brand span.edition{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.3em 0.5em;
+    color: white;
+    background: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 15px 0 0 0;
+}
+section.tournaments .list-item .content{
+    width: 60%;
+    padding: 1em 0;
+    border-right: 3px solid rgb(235, 235, 235);
+}
+section.tournaments .list-item .content .title{
+    text-transform: uppercase;
+    color: blue;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+section.tournaments .list-item .content .location{
+    font-size: 1.1em;
+    color:rgb(139, 139, 139);
+}
+section.tournaments .list-item .prize{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.tournaments .list-item .prize img{
+    width: 30%;
+    height: 80%;
+}
+section.tournaments .list-item .prize .value{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background: green;
+}
+footer{
+    background: rgb(82, 81, 81);
+    padding: 2em 1em;
+}
+footer img{
+    width: 20%;
+}
+footer .inner{
+    position: relative;
+}
+footer .inner img:nth-of-type(1){
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotateY(180deg);
+}
+footer .inner img:nth-of-type(2){
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+footer .content{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+footer .content h1{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+footer .content p{
+    color: white;
+    font-size: 1.05em;
+    letter-spacing: 5px;
+}
+.login-modal .modal-dialog{
+    width: 35%;
+}
+.login-modal .modal-body, .signup-modal .modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-modal .modal-content{
+    min-height: 300px;
+}
+.login-modal .login-form{
+    width: 70%;
+}
+.login-modal .form-control{
+    display: inline-block;
+    width: auto;
+    margin-left: 0.5rem;
+}
+.signup-modal .modal-dialog{
+    width: 40%;
+}
+.signup-modal .signup-form{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.signup-modal .signup-form .form-group{
+    width: 45%;
+}
