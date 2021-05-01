@@ -98,6 +98,10 @@ section.about-us .content p{
 }
 section.news .content-block{
     display: flex;
+    overflow-y: scroll;
+}
+section.news .content-block::-webkit-scrollbar{
+    display: none;
 }
 section.news .news-show{
     width: 70%;
@@ -160,10 +164,10 @@ section.news .news-list .item .news-title{
 section.news .news-list .item:hover .news-title{
     text-decoration: underline;
 }
-section.tournaments .inner .tournament-list-block{
+section.tournaments .inner{
     overflow-y: scroll;
 }
-section.tournaments .inner .tournament-list-block::-webkit-scrollbar{
+section.tournaments .inner::-webkit-scrollbar{
     display: none;
 }
 section.tournaments .header{
@@ -248,7 +252,7 @@ footer{
     padding: 2em 1em;
 }
 footer img{
-    width: 20%;
+    width: 17%;
 }
 footer .inner{
     position: relative;
@@ -312,4 +316,142 @@ footer .content p{
 }
 .signup-modal .signup-form .form-group{
     width: 45%;
+}
+
+/*******************/
+/**** Admin Page ***/
+/*******************/
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background: white;
+    box-shadow: 1px 1px 10px black;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar .navbar-brand{
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background: green;
+    padding: 0.5em;
+    transition: background 300ms;
+}
+.sidebar .navbar-brand:hover{
+    background: rgb(0, 95, 0);
+}
+.sidebar .menu-item .menu-link{
+    text-decoration: none;
+    color: green;
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 300ms;
+    letter-spacing: 3px;
+}
+.sidebar .menu-item .menu-link.active{
+    background: rgba(73, 255, 57, 0.678);
+    color: rgb(0, 59, 0);
+}
+.sidebar .menu-item .menu-link:hover{
+    background: rgba(73, 255, 57, 0.678);;
+}
+.admin-main{
+    padding-left: 20% !important;
+    overflow-x: hidden;
+    background: rgb(224, 224, 224);
+    height: 100%;
+}
+.admin-main::-webkit-scrollbar{
+    display: none;
+}
+.admin-main .main-inner > .header{
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: white;
+    color: green;
+    font-family: 'Righteous', cursive;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+.admin-main .main-content-block{
+    padding: 1em;
+    background-color: white;
+}
+.main-content-block .header{
+    text-align: center;
+    color: blue;
+    letter-spacing: 5px;
+}
+.main-content-block .user-list, 
+.main-content-block .player-list{
+    overflow-y: scroll;
+}
+.admin-main .main-content-block table{
+    width: 100%;
+    border: 2px solid rgb(194, 194, 194);
+}
+.admin-main .main-content-block table th.id{
+    width: 5%;
+}
+table.user-table th.username{
+    width: 45%;
+}
+table.user-table th.email{
+    width: 50%;
+}
+.admin-main .main-content-block table tr:nth-child(even){
+    background: rgb(209, 208, 208);
+}
+.admin-main table th, .admin-main table td{
+    padding: 0.5em 1em;
+}
+table td.delete:hover > *{
+    color: red;
+}
+table td.update:hover > *{
+    color: green;
+}
+.user-list .entry-delete-modal{
+    width: 30%;
+    padding: 0.5em 1em;
+    border: 2px solid rgb(105, 104, 104);
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    display: none;
+}
+.user-list .entry-delete-modal .control-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.update-player-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.update-player-form .form-group{
+    width: 45%;
+}
+.update-player-form button{
+    align-self: center;
+}
+.navbar-nav .nav-item{
+    cursor: pointer !important;
 }

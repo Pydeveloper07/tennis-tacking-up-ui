@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="navbar-brand-block text-center">
+            <a href="/index.html" class="navbar-brand">
+                TENNIS TRACKER
+            </a>
+        </div>
+        <div class="menu-bar">
+            <div class="menu-item">
+                <a href="#users" class="menu-link active">Users</a>
+            </div>
+            <div class="menu-item">
+                <a href="#players" class="menu-link">Players</a>
+            </div>
+            <div class="menu-item">
+                <a href="#coaches" class="menu-link">Coaches</a>
+            </div>
+            <div class="menu-item">
+                <a href="#referees" class="menu-link">Referees</a>
+            </div>
+            <div class="menu-item">
+                <a href="#tournaments" class="menu-link">Tournaments</a>
+            </div>
+            <div class="menu-item">
+                <a href="#events" class="menu-link">Events</a>
+            </div>
+            <div class="menu-item">
+                <a href="#courts" class="menu-link">Courts</a>
+            </div>
+            <div class="menu-item">
+                <a href="#matches" class="menu-link">Matches</a>
+            </div>
+            <div class="menu-item">
+                <a href="#news" class="menu-link">News</a>
+            </div>
+            <div class="menu-item">
+                <a href="#bets" class="menu-link">Bets</a>
+            </div>
+        </div>
+    </div>
+    <div class="admin-main">
+        <div class="main-inner h-100">
+            <div class="header">Welcome to admin panel</div>
+            <div class="main-content-block">
+                <h4 class="header">Users</h4>
+                <div class="user-list h-100">
+                    <table border=1 class="user-table">
+                        <thead>
+                            <th class="id">No.</th>
+                            <th class="username">Username</th>
+                            <th class="email">Email</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>BlackTiger</td>
+                                <td>blacktiger@gmail.com</td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Confirm Delete</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really want to delete user <q>BlackTiger</q>?
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-danger">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="header">Players</h4>
+                <div class="player-list h-100">
+                    <table border=1 class="player-table">
+                        <thead>
+                            <th class="id">No.</th>
+                            <th style="width: 10%;">First Name</th>
+                            <th style="width: 10%;">Last Name</th>
+                            <th style="width: 10%;">Coach</th>
+                            <th style="width: 10%;">Gender</th>
+                            <th style="width: 10%;">Ranking</th>
+                            <th style="width: 10%;">Handedness</th>
+                            <th style="width: 10%;">Weight (kg)</th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tukhtamurod</td>
+                                <td>Isroilov</td>
+                                <td>A freaking coach</td>
+                                <td>Male</td>
+                                <td>1</td>
+                                <td>Left handed</td>
+                                <td>65</td>
+                                <td class="update" data-toggle="modal" data-target="#playerUpdateModal"><i class="fas fa-pencil-alt"></i></td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tukhtamurod</td>
+                                <td>Isroilov</td>
+                                <td>A freaking coach</td>
+                                <td>Male</td>
+                                <td>1</td>
+                                <td>Left handed</td>
+                                <td>65</td>
+                                <td class="update" data-toggle="modal" data-target="#playerUpdateModal"><i class="fas fa-pencil-alt"></i></td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tukhtamurod</td>
+                                <td>Isroilov</td>
+                                <td>A freaking coach</td>
+                                <td>Male</td>
+                                <td>1</td>
+                                <td>Left handed</td>
+                                <td>65</td>
+                                <td class="update" data-toggle="modal" data-target="#playerUpdateModal"><i class="fas fa-pencil-alt"></i></td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Tukhtamurod</td>
+                                <td>Isroilov</td>
+                                <td>A freaking coach</td>
+                                <td>Male</td>
+                                <td>1</td>
+                                <td>Left handed</td>
+                                <td>65</td>
+                                <td class="update" data-toggle="modal" data-target="#playerUpdateModal"><i class="fas fa-pencil-alt"></i></td>
+                                <td class="delete" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Confirm Delete</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Do you really want to delete user <q>BlackTiger</q>?
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" data-dismiss="modal">Cancel</button>
+                                    <button class="btn btn-danger">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="playerUpdateModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Player Update</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="update-player-form text-center">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Middle Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="gender" id="playerGender">
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Ranking" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="handedness">
+                                                <option value="left">Left-handed</option>
+                                                <option value="right">Right-handed</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Weight (in kgs)" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="Height (in sms)" required>
+                                        </div>
+                                        <div class="form-group text-left">
+                                            <label class="mr-1" for="playerAvatar">Avatar: </label><input type="file" name="photo" id="playerAvatar" accept="image/*">
+                                        </div>
+                                        <button type="submit" class="btn btn-success"><i class="fas fa-check text-white"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/script.js"></script>
+</html>
