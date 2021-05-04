@@ -455,3 +455,362 @@ table td.update:hover > *{
 .navbar-nav .nav-item{
     cursor: pointer !important;
 }
+
+
+/******************/
+/*** User Page ****/
+/******************/
+
+.user-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+.user-main .header > .inner{
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+.user-main .header > .inner h1{
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.user-main .header .inner h1{
+    flex-grow: 10;
+    padding: 0.3em;
+}
+.user-main .header .balance-indicator{
+    padding: 0.5rem;
+    font-size: 1.4em;
+}
+.user-main .header .balance-indicator .inner{
+    margin-left: auto;
+    background: rgb(0, 185, 0);
+    color: white;
+    padding: 0.6em 0.5em;
+    border-radius: 10px;
+    position: relative;
+}
+.user-main .header .balance-indicator .inner .add{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px 0 10px 0;
+    border: none;
+    outline: none;
+    background: red;
+    color: white;
+}
+.user-main .header .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user-main .header .balance-indicator{
+    flex-grow: 2;
+}
+.fill-balance-modal .modal-dialog{
+    width: 20%;
+}
+.fill-balance-form .form-control{
+    width: 70%;
+    display: inline-block;
+}
+.user-favorite-players > .header, 
+.user-bet-history > .header, 
+.user-active-bets > .header{
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 5px solid rgb(236, 236, 236);
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.user-favorite-players .list-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-favorite-players .list-block .item{
+    padding: 5px;
+    width: 25%;
+}
+.user-favorite-players .list-block table tr td:first-child{
+    color: grey;
+    font-style: italic;
+}
+.card-title {
+    color:rgb(0, 59, 0)
+}
+.user-favorite-players .list-block table tr td:last-child{
+    color: grey;
+}
+.card .favorite-btn{
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.user-active-bets .list-block, 
+.user-bet-history .list-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-active-bets .list-block .item, 
+.user-bet-history .list-block .item {
+    width:50%;
+    padding: 5px;
+}
+.user-active-bets .list-block .item .bet-card, 
+.user-bet-history .list-block .item .bet-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+}
+.user-active-bets .list-block .item .header,
+.user-bet-history .list-block .item .header
+{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(235, 235, 235);
+}
+.user-active-bets .list-block .item .header .block,
+.user-bet-history .list-block .item .header .block{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.user-active-bets .list-block .item .header .block p,
+.user-bet-history .list-block .item .header .block p{
+    margin: 0;
+    font-weight: bold;
+}
+.user-active-bets .list-block .item img,
+.user-bet-history .list-block .item img{
+    width: 70px;
+    max-width: 80px;
+    border-radius: 50%;
+}
+.user-active-bets .list-block .item .block-vs{
+    display: flex;
+    align-items: center;
+}
+.user-active-bets .list-block .item .block-vs img{
+    width: 50px;
+}
+.bet-card table td{
+    color: grey;
+}
+
+
+
+/************/
+/** Players */
+/************/
+
+.players-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+.players-main .header > .inner{
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+.players-main .header > .inner h1{
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.players-main .header .inner h1{
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.players-main .header .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.players .list-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.players .list-block .item{
+    padding: 5px;
+    width: 33.33%;
+}
+section.players .list-block table tr td:first-child{
+    color: grey;
+    font-style: italic;
+}
+.card-title {
+    color:rgb(0, 59, 0)
+}
+section.players .list-block table tr td:last-child{
+    color: grey;
+}
+.card .favorite-btn{
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+/***********/
+/** Matchs ***/
+/***********/
+.match-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+.match-main .header > .inner{
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+.match-main .header > .inner h1{
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.match-main .header .inner h1{
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.match-main .header .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.match-list .list-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.match-list .list-block .item{
+    width:33.33%;
+    padding: 5px;
+}
+section.match-list .list-block .item .match-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+}
+section.match-list .list-block .item .header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(235, 235, 235);
+}
+section.match-list .list-block .item .header .block{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+section.match-list .list-block .item .header .block p{
+    margin: 0;
+    font-weight: bold;
+}
+section.match-list .list-block .item img{
+    width: 70px;
+    max-width: 80px;
+    border-radius: 50%;
+}
+section.match-list .list-block .item .block-vs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.match-list .list-block .item .block-vs img{
+    width: 50px;
+}
+.match-card .bet-btn{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/*************/
+/*** Bets ****/
+/*************/
+.bets-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+.bets-main .header > .inner{
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+.bets-main .header > .inner h1{
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.bets-main .header .inner h1{
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.bets-main .header .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bets-main .match-card{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.bets-main .match-card .header{
+    display: flex;
+    justify-content: space-around;
+}
+.bets-main .match-card .header .block{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.bets-main .match-card .header .block p{
+    margin: 0;
+    font-weight: bold;
+}
+.bets-main img{
+    width: 170px;
+    max-width: 170px;
+    border-radius: 50%;
+}
+.bets-main .block-vs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bets-main .block-vs img{
+    width: 70px;
+}
+.match-card .bet-btn{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.bets-main section.match{
+    background: url(/images/match-card-bg.jpg) no-repeat center;
+    background-size: cover;
+}

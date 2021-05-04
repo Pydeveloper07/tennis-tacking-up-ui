@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Tracker</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="user-main">
+        <div class="header">
+            <div class="inner position-relative">
+                <h1 class="text-center">Welcome, Tukhtamurod Isroilov</h1>
+                <div class="balance-indicator">
+                    <div class="inner">
+                        <button data-toggle="modal" data-target="#fillBalanceModal" class="add">+</button>
+                        0.00
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="/admin-page.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="user-favorite-players">
+            <div class="header">
+                Favorite Players
+            </div>
+            <div class="list-block">
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image-block position-relative">
+                            <img class="card-img-top" src="/images/player.jpg" alt="Card image cap">
+                            <i style="color: rgb(230, 0, 0);" class="favorite-btn fas fa-heart fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tukhtamurod Isroilov</h5>
+                            <table class="w-100">
+                                <tr>
+                                    <td>Ranking</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>175</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image-block position-relative">
+                            <img class="card-img-top" src="/images/player.jpg" alt="Card image cap">
+                            <i style="color: rgb(230, 0, 0);" class="favorite-btn fas fa-heart fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tukhtamurod Isroilov</h5>
+                            <table class="w-100">
+                                <tr>
+                                    <td>Ranking</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>175</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image-block position-relative">
+                            <img class="card-img-top" src="/images/player.jpg" alt="Card image cap">
+                            <i style="color: rgb(230, 0, 0);" class="favorite-btn fas fa-heart fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tukhtamurod Isroilov</h5>
+                            <table class="w-100">
+                                <tr>
+                                    <td>Ranking</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>175</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image-block position-relative">
+                            <img class="card-img-top" src="/images/player.jpg" alt="Card image cap">
+                            <i style="color: rgb(230, 0, 0);" class="favorite-btn fas fa-heart fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tukhtamurod Isroilov</h5>
+                            <table class="w-100">
+                                <tr>
+                                    <td>Ranking</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>175</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="user-active-bets">
+            <div class="header">
+                Active Bets
+            </div>
+            <div class="list-block">
+                <div class="item">
+                    <div class="bet-card">
+                        <div class="header position-relative">
+                            <div class="block">
+                                <p class="player-name mr-1">Natasha</p>
+                                <div class="player-image-block">
+                                    <img src="/images/player2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="block-vs">
+                                <img src="/images/vs.png" alt="">
+                            </div>
+                            <div class="block">
+                                <div class="player-image-block">
+                                    <img src="/images/player3.jpg" alt="">
+                                </div>
+                                <p class="player-name ml-1">Anna</p>
+                            </div>
+                        </div>
+                        <div class="body p-2">
+                            <table class="w-100">
+                                <thead>
+                                    <th style="width: 50%;">Bet: <span class="text-success">Team one to win</span></th>
+                                    <th style="width: 50%;">Odds: <span class="badge badge-success">1.58</span></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bet amount: <span class="badge badge-info">5000</span> sum</td>
+                                        <td>Potential winnings: <span class="badge badge-success">8359</span> sum</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right"><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bet-card">
+                        <div class="header position-relative">
+                            <div class="block">
+                                <p class="player-name mr-1">Natasha</p>
+                                <div class="player-image-block">
+                                    <img src="/images/player2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="block-vs">
+                                <img src="/images/vs.png" alt="">
+                            </div>
+                            <div class="block">
+                                <div class="player-image-block">
+                                    <img src="/images/player3.jpg" alt="">
+                                </div>
+                                <p class="player-name ml-1">Anna</p>
+                            </div>
+                        </div>
+                        <div class="body p-2">
+                            <table class="w-100">
+                                <thead>
+                                    <th style="width: 50%;">Bet: <span class="text-success">Team one to win</span></th>
+                                    <th style="width: 50%;">Odds: <span class="badge badge-success">1.58</span></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bet amount: <span class="badge badge-info">5000</span> sum</td>
+                                        <td>Potential winnings: <span class="badge badge-success">8359</span> sum</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right"><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="user-bet-history">
+            <div class="header">
+                Bet History
+            </div>
+            <div class="list-block">
+                <div class="item">
+                    <div class="bet-card">
+                        <div class="header position-relative">
+                            <div class="block">
+                                <p class="player-name mr-1">Natasha</p>
+                                <div class="player-image-block">
+                                    <img src="/images/player2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="block-vs">
+                                <img src="/images/vs.png" alt="">
+                            </div>
+                            <div class="block">
+                                <div class="player-image-block">
+                                    <img src="/images/player3.jpg" alt="">
+                                </div>
+                                <p class="player-name ml-1">Anna</p>
+                            </div>
+                        </div>
+                        <div class="body p-2">
+                            <table class="w-100">
+                                <thead>
+                                    <th style="width: 50%;">Bet: <span class="text-success">Team one to win</span></th>
+                                    <th style="width: 50%;">Odds: <span class="badge badge-success">1.58</span></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bet amount: <span class="badge badge-info">5000</span> sum</td>
+                                        <td>Winnings: <span class="badge badge-success">0.00</span> sum</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right"><span class="badge badge-danger">Loss</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bet-card">
+                        <div class="header position-relative">
+                            <div class="block">
+                                <p class="player-name mr-1">Natasha</p>
+                                <div class="player-image-block">
+                                    <img src="/images/player2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="block-vs">
+                                <img src="/images/vs.png" alt="">
+                            </div>
+                            <div class="block">
+                                <div class="player-image-block">
+                                    <img src="/images/player3.jpg" alt="">
+                                </div>
+                                <p class="player-name ml-1">Anna</p>
+                            </div>
+                        </div>
+                        <div class="body p-2">
+                            <table class="w-100">
+                                <thead>
+                                    <th style="width: 50%;">Bet: <span class="text-success">Team one to win</span></th>
+                                    <th style="width: 50%;">Odds: <span class="badge badge-success">1.58</span></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bet amount: <span class="badge badge-info">5000</span> sum</td>
+                                        <td>Winnings: <span class="badge badge-success">10000</span> sum</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-right"><span class="badge badge-success">Win</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="modal fade fill-balance-modal" id="fillBalanceModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalLongTitle">Fill Your Balance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="fill-balance-form text-center">
+                        <div class="form-group text-center">
+                            <label for="amount">Enter the amount:</label>
+                            <input type="number" id="amount" class="form-control" step="1000" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Confirm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <img src="/images/icon.png" alt="">
+            <img style src="/images/icon.png" alt="">
+            <div class="content">
+                <h1>Tennis tracker</h1>
+                <p>Specially designed for DB Term Project</p>
+                <p>by "A Team"</p>
+                <p>All rights reserved!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/script.js"></script>
+</html>
