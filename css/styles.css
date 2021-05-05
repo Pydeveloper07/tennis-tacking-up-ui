@@ -814,3 +814,43 @@ section.match-list .list-block .item .block-vs img{
     background: url(/images/match-card-bg.jpg) no-repeat center;
     background-size: cover;
 }
+section.bets-list .list-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.bets-list .list-block .bet-item{
+    width:33.33%;
+    padding: 5px;
+}
+section.bets-list .list-block .bet-item > .inner{
+    background: white;
+}
+section.bets-list .list-block .bet-item .bet-name{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+.bet-item .bet-card .logo img{
+    width: 30px;
+    height: 30px;
+}
+.bet-item .bet-options table{
+    width: 100%;
+}
+.bet-item .bet-options table > tr > td{
+    border-right: 1px solid grey;
+}
+.bet-item .bet-options table td{
+    padding: 1px 3px;
+}
+.bet-item .bet-options .bet-option{
+    cursor: pointer;
+    font-weight: bold;
+}
+.bet-item .bet-options .bet-option:hover{
+    color: blue;
+}
